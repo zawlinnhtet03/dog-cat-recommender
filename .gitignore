@@ -8,3 +8,4 @@ input/state_labels.csv
 input/images/
 input/images_old.zip/
 
+found_pet_features.h5

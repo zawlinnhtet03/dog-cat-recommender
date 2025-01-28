@@ -1,4 +1,10 @@
-myenv/
 venv/
+cnn/
+input/train/
+input/test/
+input/breed_labels.csv
+input/color_labels.csv
+input/state_labels.csv
 input/images/
 input/images_old.zip/
+

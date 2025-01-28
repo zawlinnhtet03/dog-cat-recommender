@@ -89,7 +89,7 @@ def main():
     data['Similarity'] = similarity_scores
 
     # Filter top recommendations
-    top_recommendations = data[(data['Similarity'] > 0.7) & (data['Type'] == user_preferences['Type'])].sort_values('Similarity', ascending=False)
+    top_recommendations = data[(data['Gender'] == user_preferences['Gender']) & (data['Type'] == user_preferences['Type']) & (data['FeeCategory'] == user_preferences['FeeCategory'])].sort_values('Similarity', ascending=False)
 
     # Blur filtering and display recommendations
     st.subheader("Recommended Pets (Images)")
